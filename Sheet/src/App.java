@@ -6,8 +6,8 @@ public class App {
         // obj.rotate(nums, k);
         // NextGreater3 obj = new NextGreater3();
         // System.out.println(obj.nextGreaterElement(230241));
-        int nums[] = { 2, 2, 1, 1, 1, 2, 2 };
-        MajorityElement obj = new MajorityElement();
+        int nums[] = { 2, 2 };
+        MajorityElement2 obj = new MajorityElement2();
         System.out.println(obj.majorityElement(nums));
     }
 }
