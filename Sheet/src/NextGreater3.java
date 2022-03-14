@@ -54,7 +54,6 @@ public class NextGreater3 {
         try {
             return Integer.parseInt(new String(arr));
         } catch (Exception e) {
-            // TODO: handle exception
             return -1;
         }
     }

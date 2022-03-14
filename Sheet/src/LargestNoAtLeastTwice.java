@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * https://leetcode.com/problems/largest-number-at-least-twice-of-others/
  * 
