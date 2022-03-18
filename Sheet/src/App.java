@@ -6,7 +6,8 @@ public class App {
         // obj.rotate(nums, k);
         // NextGreater3 obj = new NextGreater3();
         // System.out.println(obj.nextGreaterElement(230241));
-        int nums[] = { 3, 2, 4 };
+        int nums[] = { 0, 1, 3, 0, 12 };
+        // int nums2[] = { 1 };
         // MajorityElement2 obj = new MajorityElement2();
         // System.out.println(obj.majorityElement(nums));
         // MaxChunksToMakeSorted2 obj = new MaxChunksToMakeSorted2();
@@ -22,11 +23,17 @@ public class App {
         // System.out.println(obj.numSubarrayBoundedMax(nums, 2, 3));
         // Segregate0sAnd1s obj = new Segregate0sAnd1s();
         // obj.segregate0and1(nums, 4);
-        TwoSum obj = new TwoSum();
-        int res[] = new int[2];
-        res = obj.twoSum(nums, 6);
-        for (int i : res) {
-            System.out.println(i);
-        }
+        // TwoSum obj = new TwoSum();
+        // int res[] = new int[2];
+        // res = obj.twoSum(nums, 6);
+        // for (int i : res) {
+        // System.out.println(i);
+        // }
+        // BestTimeToBuyandSell obj = new BestTimeToBuyandSell();
+        // System.out.println(obj.maxProfit(nums));
+        // MergeSortedArray obj = new MergeSortedArray();
+        // obj.merge(nums1, 0, nums2, 1);
+        MoveZeroes obj = new MoveZeroes();
+        obj.moveZeroes(nums);
     }
 }
