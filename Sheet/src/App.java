@@ -6,7 +6,7 @@ public class App {
         // obj.rotate(nums, k);
         // NextGreater3 obj = new NextGreater3();
         // System.out.println(obj.nextGreaterElement(230241));
-        int nums[] = { 0, 1, 3, 0, 12 };
+        int nums[] = { 7, 1, 5, 3, 6, 4 };
         // int nums2[] = { 1 };
         // MajorityElement2 obj = new MajorityElement2();
         // System.out.println(obj.majorityElement(nums));
@@ -29,11 +29,11 @@ public class App {
         // for (int i : res) {
         // System.out.println(i);
         // }
-        // BestTimeToBuyandSell obj = new BestTimeToBuyandSell();
-        // System.out.println(obj.maxProfit(nums));
+        BestTimeToBuyandSell2 obj = new BestTimeToBuyandSell2();
+        System.out.println(obj.maxProfit(nums));
         // MergeSortedArray obj = new MergeSortedArray();
         // obj.merge(nums1, 0, nums2, 1);
-        MoveZeroes obj = new MoveZeroes();
-        obj.moveZeroes(nums);
+        // MoveZeroes obj = new MoveZeroes();
+        // obj.moveZeroes(nums);
     }
 }
