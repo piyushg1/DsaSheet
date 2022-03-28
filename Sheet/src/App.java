@@ -6,7 +6,7 @@ public class App {
         // obj.rotate(nums, k);
         // NextGreater3 obj = new NextGreater3();
         // System.out.println(obj.nextGreaterElement(230241));
-        // int nums[] = { 3, 3, 4 };
+        int nums[] = { 1, 1, 3 };
         // int nums2[] = { 1 };
         // MajorityElement obj = new MajorityElement();
         // System.out.println(obj.majorityElement(nums));
@@ -37,7 +37,15 @@ public class App {
         // obj.moveZeroes(nums);
         // PivotIndex obj = new PivotIndex();
         // System.out.println(obj.pivotIndex(nums));
-        Fibonnaci obj = new Fibonnaci();
-        System.out.println(obj.fib(6));
+        // Fibonnaci obj = new Fibonnaci();
+        // System.out.println(obj.fib(6));
+        // int[] res = new int[nums.length];
+        // SquareOfSortedArray obj = new SquareOfSortedArray();
+        // res = obj.sortedSquares(nums);
+        // for (int i : res) {
+        // System.out.println(i);
+        // }
+        RemoveDuplicatesfromSortedArray obj = new RemoveDuplicatesfromSortedArray();
+        System.out.println("output is: " + obj.removeDuplicates(nums));
     }
 }

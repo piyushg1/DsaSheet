@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
