@@ -6,7 +6,7 @@ public class App {
         // obj.rotate(nums, k);
         // NextGreater3 obj = new NextGreater3();
         // System.out.println(obj.nextGreaterElement(230241));
-        int nums[] = { 1, 1, 3 };
+        // int nums[] = { 1, 1, 3 };
         // int nums2[] = { 1 };
         // MajorityElement obj = new MajorityElement();
         // System.out.println(obj.majorityElement(nums));
@@ -45,7 +45,18 @@ public class App {
         // for (int i : res) {
         // System.out.println(i);
         // }
-        RemoveDuplicatesfromSortedArray obj = new RemoveDuplicatesfromSortedArray();
-        System.out.println("output is: " + obj.removeDuplicates(nums));
+        // RemoveDuplicatesfromSortedArray obj = new RemoveDuplicatesfromSortedArray();
+        // System.out.println("output is: " + obj.removeDuplicates(nums));
+        // int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
+        // MergeIntervals obj = new MergeIntervals();
+        // int[][] res = obj.merge(intervals);
+        // for (int i = 0; i < res.length; i++) {
+        // for (int j = 0; j < res[i].length; j++) {
+        // System.out.println(res[i][j] + " ");
+        // }
+        // }
+        LongestCommonPrefix obj = new LongestCommonPrefix();
+        String[] s = { "ab", "a" };
+        System.out.println("longest is: " + obj.longestCommonPrefix(s));
     }
 }

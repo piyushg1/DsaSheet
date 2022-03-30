@@ -37,12 +37,12 @@
  * 0 <= nums[i] <= 109
  * 0 <= left <= right <= 109
  */
-public class NoOfSubArrayWithBoundedMax {
-    static int count = 0;
+// public class NoOfSubArrayWithBoundedMax {
+// static int count = 0;
 
-    public int numSubarrayBoundedMax(int[] nums, int left, int right) {
-        int len = nums.length;
+// public int numSubarrayBoundedMax(int[] nums, int left, int right) {
+// int len = nums.length;
 
-        return count;
-    }
-}
+// return count;
+// }
+// }
