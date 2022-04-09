@@ -55,8 +55,23 @@ public class App {
         // System.out.println(res[i][j] + " ");
         // }
         // }
-        LongestCommonPrefix obj = new LongestCommonPrefix();
-        String[] s = { "ab", "a" };
-        System.out.println("longest is: " + obj.longestCommonPrefix(s));
+        // LongestCommonPrefix obj = new LongestCommonPrefix();
+        // Palindrome obj = new Palindrome();
+        // String s = "race a car";
+        // System.out.println("ispal?: " + obj.isPalindrome(s));
+        // AddStrings obj = new AddStrings();
+        // System.out.println(obj.addStrings("456", "77"));
+        // LastStoneWeight obj = new LastStoneWeight();
+        // int[] stones = { 1, 3 };
+        // System.out.println(obj.lastStoneWeight(stones));
+        // KthLargestElement obj = new KthLargestElement();
+        // int[] nums = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
+        // System.out.println(obj.findKthLargest(nums, 4));
+        int nums[] = { 1, 1, 1, 2, 2, 3 };
+        TopKFrequentElements obj = new TopKFrequentElements();
+        int res[] = obj.topKFrequent(nums, 2);
+        for (int i : res) {
+            System.out.println(i);
+        }
     }
 }
