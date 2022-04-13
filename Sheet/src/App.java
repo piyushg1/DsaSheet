@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // RotateArray obj = new RotateArray();
@@ -67,11 +70,46 @@ public class App {
         // KthLargestElement obj = new KthLargestElement();
         // int[] nums = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
         // System.out.println(obj.findKthLargest(nums, 4));
-        int nums[] = { 1, 1, 1, 2, 2, 3 };
-        TopKFrequentElements obj = new TopKFrequentElements();
-        int res[] = obj.topKFrequent(nums, 2);
-        for (int i : res) {
+        // int nums[] = { 1, 1, 1, 2, 2, 3 };
+        // TopKFrequentElements obj = new TopKFrequentElements();
+        // int res[] = obj.topKFrequent(nums, 2);
+        // for (int i : res) {
+        // System.out.println(i);
+        // }
+        // SortCharacterByFreq obj = new SortCharacterByFreq();
+        // String s = "tree";
+        // System.out.println("OP: " + obj.frequencySort(s));
+        // BaseBallGame obj = new BaseBallGame();
+        // String[] ops = { "5", "2", "C", "D", "+" };
+        // System.out.println(obj.calPoints(ops));
+        // Shift2DGrid obj = new Shift2DGrid();
+        // int[][] grid = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        // List<List<Integer>> res = obj.shiftGrid(grid, 1);
+        // for (int i = 0; i < res.size(); i++) {
+        // for (int j = 0; j < res.get(i).size(); j++) {
+        // System.out.println(res.get(j) + " ,");
+        // }
+        // System.out.println("");
+        // }
+        // int[] nums = { 2, 2, 3, 1 };
+        // ThirdMaxNo obj = new ThirdMaxNo();
+        // System.out.println(obj.thirdMax(nums));
+        int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+        // GameOfLife obj = new GameOfLife();
+        // obj.gameOfLife(board);
+        SpiralMatrix obj = new SpiralMatrix();
+        // int[][] res = obj.generateMatrix(3);
+        // for (int i = 0; i < res.length; i++) {
+        // for (int j = 0; j < res[0].length; j++) {
+        // System.out.println(res[i][j] + " ");
+        // }
+        // System.out.println();
+        // }
+        ArrayList<Integer> res = new ArrayList<>();
+        res.addAll(obj.spiralOrder(matrix));
+        for (Integer i : res) {
             System.out.println(i);
         }
+
     }
 }
