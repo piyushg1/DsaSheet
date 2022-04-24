@@ -66,6 +66,7 @@ public class ThirdMaxNo {
             hs.remove(Collections.max(hs));
             hs.remove(Collections.max(hs));
         }
+        String s = "hello";
         return Collections.max(hs);
     }
 }

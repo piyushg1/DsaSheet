@@ -94,10 +94,10 @@ public class App {
         // int[] nums = { 2, 2, 3, 1 };
         // ThirdMaxNo obj = new ThirdMaxNo();
         // System.out.println(obj.thirdMax(nums));
-        int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+        // int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
         // GameOfLife obj = new GameOfLife();
         // obj.gameOfLife(board);
-        SpiralMatrix obj = new SpiralMatrix();
+        // SpiralMatrix obj = new SpiralMatrix();
         // int[][] res = obj.generateMatrix(3);
         // for (int i = 0; i < res.length; i++) {
         // for (int j = 0; j < res[0].length; j++) {
@@ -105,11 +105,51 @@ public class App {
         // }
         // System.out.println();
         // }
-        ArrayList<Integer> res = new ArrayList<>();
-        res.addAll(obj.spiralOrder(matrix));
-        for (Integer i : res) {
-            System.out.println(i);
-        }
-
+        // ArrayList<Integer> res = new ArrayList<>();
+        // res.addAll(obj.spiralOrder(matrix));
+        // for (Integer i : res) {
+        // System.out.println(i);
+        // }
+        // ValidPerfectSquare obj = new ValidPerfectSquare();
+        // System.out.println(obj.isPerfectSquare(4));
+        // DesingHashSet obj = new DesingHashSet();
+        // obj.add(1); // set = [1]
+        // obj.add(2); // set = [1, 2]
+        // System.out.println((obj.contains(1))); // return True
+        // obj.contains(3); // return False, (not found)
+        // obj.add(2); // set = [1, 2]
+        // System.out.println((obj.contains(2))); // return True
+        // obj.remove(2); // set = [1]
+        // System.out.println((obj.contains(2))); // return False, (already removed)
+        // DesingHashMap myHashMap = new DesingHashMap();
+        // myHashMap.put(1, 1); // The map is now [[1,1]]
+        // myHashMap.put(2, 2); // The map is now [[1,1], [2,2]]
+        // System.out.println((myHashMap.get(1))); // return 1, The map is now [[1,1],
+        // [2,2]]
+        // System.out.println((myHashMap.get(3))); // return -1 (i.e., not found), The
+        // map is now [[1,1], [2,2]]
+        // myHashMap.put(2, 1); // The map is now [[1,1], [2,1]] (i.e., update the
+        // existing value)
+        // System.out.println((myHashMap.get(2))); // return 1, The map is now [[1,1],
+        // [2,1]]
+        // myHashMap.remove(2); // remove the mapping for 2, The map is now [[1,1]]
+        // System.out.println((myHashMap.get(2))); // return -1 (i.e., not found), The
+        // map is now [[1,1]]
+        // EncodeAndDecodeTinyUrl obj = new EncodeAndDecodeTinyUrl();
+        // String url = "https://leetcode.com/problems/design-tinyurl";
+        // String tiny = obj.encode(url);
+        // System.out.println("decoded: " + obj.decode(tiny));
+        DesignUndergroundSystem undergroundSystem = new DesignUndergroundSystem();
+        undergroundSystem.checkIn(10, "Leyton", 3);
+        undergroundSystem.checkOut(10, "Paradise", 8); // Customer 10 "Leyton" -> "Paradise" in 8-3 = 5
+        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 5.00000, (5) / 1 = 5
+        undergroundSystem.checkIn(5, "Leyton", 10);
+        undergroundSystem.checkOut(5, "Paradise", 16); // Customer 5 "Leyton" -> "Paradise" in 16-10 = 6
+        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 5.50000, (5 + 6) / 2 =
+                                                                                      // // 5.5
+        undergroundSystem.checkIn(2, "Leyton", 21);
+        undergroundSystem.checkOut(2, "Paradise", 30); // Customer 2 "Leyton" -> "Paradise" in 30-21 = 9
+        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 6.66667, (5 + 6 + 9) / 3
+                                                                                      // // = 6.66667
     }
 }
