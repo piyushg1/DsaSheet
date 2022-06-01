@@ -1,7 +1,5 @@
 import java.util.Stack;
 
-import javax.lang.model.element.Element;
-
 /**
  * https://leetcode.com/problems/valid-parentheses/
  * 20. Valid Parentheses

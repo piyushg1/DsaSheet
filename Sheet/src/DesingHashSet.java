@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 /**
  * https://leetcode.com/problems/design-hashset/

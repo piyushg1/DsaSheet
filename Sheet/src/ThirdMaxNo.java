@@ -1,6 +1,5 @@
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.PriorityQueue;
 
 /**
  * https://leetcode.com/problems/third-maximum-number/
@@ -66,7 +65,6 @@ public class ThirdMaxNo {
             hs.remove(Collections.max(hs));
             hs.remove(Collections.max(hs));
         }
-        String s = "hello";
         return Collections.max(hs);
     }
 }

@@ -1,7 +1,5 @@
 import java.util.PriorityQueue;
 
-import javafx.scene.layout.Priority;
-
 /**
  * https://leetcode.com/problems/furthest-building-you-can-reach/
  * 1642. Furthest Building You Can Reach

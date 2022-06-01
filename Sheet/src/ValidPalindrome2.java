@@ -1,5 +1,3 @@
-import java.util.HashMap;
-import java.util.Hashtable;
 
 /**
  * https://leetcode.com/problems/valid-palindrome-ii/

@@ -1,4 +1,3 @@
-import javafx.scene.transform.Scale;
 
 /**
  * https://leetcode.com/problems/valid-palindrome/
