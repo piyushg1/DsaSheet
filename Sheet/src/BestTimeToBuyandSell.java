@@ -45,14 +45,13 @@
  */
 public class BestTimeToBuyandSell {
     public int maxProfit(int[] prices) {
-        int len = prices.length, min = Integer.MAX_VALUE, profit = 0, profitToday = 0;
+        int len = prices.length, maxProfit = 0, profit = 0;
+        int min = prices[0];
         for (int i = 0; i < len; i++) {
-            min = Math.min(prices[i], min);
-            profitToday = prices[i] - min;
-            if (profitToday > profit) {
-                profit = profitToday;
-            }
+            min = Math.min(min, prices[i]);
+            profit = prices[i] - min;
+            maxProfit = Math.max(profit, maxProfit);
         }
-        return profit;
+        return maxProfit;
     }
 }

@@ -32,7 +32,8 @@ public class App {
         // for (int i : res) {
         // System.out.println(i);
         // // }
-        // BestTimeToBuyandSell2 obj = new BestTimeToBuyandSell2();
+        // int[] nums = { 7, 1, 5, 3, 6, 4 };
+        // BestTimeToBuyandSell obj = new BestTimeToBuyandSell();
         // System.out.println(obj.maxProfit(nums));
         // MergeSortedArray obj = new MergeSortedArray();
         // obj.merge(nums1, 0, nums2, 1);
@@ -71,7 +72,7 @@ public class App {
         // int[] nums = { 3, 2, 3, 1, 2, 4, 5, 5, 6 };
         // System.out.println(obj.findKthLargest(nums, 4));
         // int nums[] = { 1, 1, 1, 2, 2, 3 };
-        // TopKFrequentElements obj = new TopKFrequentElements();
+        // TopKFrequentElementsPractice obj = new TopKFrequentElementsPractice();
         // int res[] = obj.topKFrequent(nums, 2);
         // for (int i : res) {
         // System.out.println(i);
@@ -139,17 +140,96 @@ public class App {
         // String url = "https://leetcode.com/problems/design-tinyurl";
         // String tiny = obj.encode(url);
         // System.out.println("decoded: " + obj.decode(tiny));
-        DesignUndergroundSystem undergroundSystem = new DesignUndergroundSystem();
-        undergroundSystem.checkIn(10, "Leyton", 3);
-        undergroundSystem.checkOut(10, "Paradise", 8); // Customer 10 "Leyton" -> "Paradise" in 8-3 = 5
-        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 5.00000, (5) / 1 = 5
-        undergroundSystem.checkIn(5, "Leyton", 10);
-        undergroundSystem.checkOut(5, "Paradise", 16); // Customer 5 "Leyton" -> "Paradise" in 16-10 = 6
-        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 5.50000, (5 + 6) / 2 =
-                                                                                      // // 5.5
-        undergroundSystem.checkIn(2, "Leyton", 21);
-        undergroundSystem.checkOut(2, "Paradise", 30); // Customer 2 "Leyton" -> "Paradise" in 30-21 = 9
-        System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise"))); // return 6.66667, (5 + 6 + 9) / 3
-                                                                                      // // = 6.66667
+        // DesignUndergroundSystem undergroundSystem = new DesignUndergroundSystem();
+        // undergroundSystem.checkIn(10, "Leyton", 3);
+        // undergroundSystem.checkOut(10, "Paradise", 8); // Customer 10 "Leyton" ->
+        // "Paradise" in 8-3 = 5
+        // System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise")));
+        // // return 5.00000, (5) / 1 = 5
+        // undergroundSystem.checkIn(5, "Leyton", 10);
+        // undergroundSystem.checkOut(5, "Paradise", 16); // Customer 5 "Leyton" ->
+        // "Paradise" in 16-10 = 6
+        // System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise")));
+        // // return 5.50000, (5 + 6) / 2 =
+        // // // 5.5
+        // undergroundSystem.checkIn(2, "Leyton", 21);
+        // undergroundSystem.checkOut(2, "Paradise", 30); // Customer 2 "Leyton" ->
+        // "Paradise" in 30-21 = 9
+        // System.out.println((undergroundSystem.getAverageTime("Leyton", "Paradise")));
+        // // return 6.66667, (5 + 6 + 9) / 3
+        // // = 6.66667
+        // CountNegativeNumbersInASortedMatrix obj = new
+        // CountNegativeNumbersInASortedMatrix();
+        // int[][] grid = { { 4, 3, 2, -1 }, { 3, 2, 1, -1 }, { 1, 1, -1, -2 }, { -1,
+        // -1, -2, -3 } };
+        // System.out.println(obj.countNegatives(grid));
+        // int[][] points = { { 0, 0 }, { 2, 2 }, { 3, 10 }, { 5, 2 }, { 7, 0 } };
+        // MinCostToConnectAllPoints obj = new MinCostToConnectAllPoints();
+        // System.out.println(obj.minCostConnectPoints(points));
+        // ImplementStackUsingQueues myStack = new ImplementStackUsingQueues();
+        // myStack.push(1);
+        // myStack.push(2);
+        // System.out.println((myStack.top())); // return 2
+        // System.out.println((myStack.pop())); // return 2
+        // System.out.println((myStack.empty())); // return False
+        // RemoveAllAdjacentDuplicatesInString2 obj = new
+        // RemoveAllAdjacentDuplicatesInString2();
+        // String s = "deeedbbcccbdaa";
+        // System.out.println(obj.removeDuplicates(s, 3));
+        // One32Patter obj = new One32Patter();
+        // int nums[] = { 3, 1, 4, 2 };
+        // System.out.println(obj.find132pattern(nums));
+        // PascalsTriangle obj = new PascalsTriangle();
+        // obj.generate(5);
+        // ImplementStrStr obj = new ImplementStrStr();
+        // System.out.println(obj.strStr("mississippi",
+        // "issipi"));
+        // MinStack minStack = new MinStack();
+        // minStack.push(-2);
+        // minStack.push(0);
+        // minStack.push(-3);
+        // System.out.println((minStack.getMin())); // return -3
+        // minStack.pop();
+        // System.out.println((minStack.top())); // return 0
+        // System.out.println((minStack.getMin())); // return -2
+        // NextGreaterElement1 obj = new NextGreaterElement1();
+        // int[] n1 = { 4, 1, 2 };
+        // int[] n2 = { 1, 3, 4, 2 };
+        // int[] res = new int[n1.length];
+        // res = obj.nextGreaterElement(n1, n2);
+        // for (int i : res) {
+        // System.out.println(i);
+        // }
+        // int[] heights = { 1, 5, 1, 2, 3, 4, 10000 };
+        // int ladders = 1;
+        // int bricks = 4;
+        // FurthestBuildingYouCanReach obj = new FurthestBuildingYouCanReach();
+        // System.out.println(obj.furthestBuilding(heights, bricks, ladders));
+        // NextGreaterElement2 obj = new NextGreaterElement2();
+        // int[] nums = { 1, 2, 3, 2 };
+        // int[] op = new int[nums.length];
+        // op = obj.nextGreaterElements(nums);
+        // for (int i : op) {
+        // System.out.println(i + ", ");
+        // }
+        // FindDuplicates obj = new FindDuplicates();
+        // System.out.println(obj.containsDuplicate(nums));
+        // ValidAnagram obj = new ValidAnagram();
+        // String s = "anagram";
+        // String t = "nagaray";
+        // System.out.println(obj.isAnagram(s, t));
+        // String s = "()[]{}";
+        // ValidParanthesis obj = new ValidParanthesis();
+        // System.out.println(obj.isValid(s));
+        // LongestSubstringWithoutRepeatingCharacters obj = new
+        // LongestSubstringWithoutRepeatingCharacters();
+        // String s = "babad";
+        // System.out.println(obj.lengthOfLongestSubstring(s));
+        // LongestPalindromicSubstring obj = new LongestPalindromicSubstring();
+        // System.out.println(obj.longestPalindrome(s));
+        char[] letters = { 'a', 'f', 'j' };
+        char target = 'c';
+        FindSmallestLetterGreaterThanTarget obj = new FindSmallestLetterGreaterThanTarget();
+        System.out.println(obj.nextGreatestLetter(letters, target));
     }
 }

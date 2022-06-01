@@ -51,17 +51,29 @@ import java.util.HashMap;
  */
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        int len = nums.length;
-        int[] res = new int[2];
-        HashMap<Integer, Integer> hm = new HashMap<>();
-        for (int i = 0; i < len; i++) {
-            if (hm.containsKey(target - nums[i])) {
+        int res[] = new int[2];
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(nums[i])) {
                 res[0] = i;
-                res[1] = hm.get(target - nums[i]);
-                return res;
+                res[1] = map.get(nums[i]);
+                break;
             }
-            hm.put(nums[i], i);
+            map.put(target - nums[i], i);
         }
         return res;
     }
+    // int len = nums.length;
+    // int[] res = new int[2];
+    // HashMap<Integer, Integer> hm = new HashMap<>();
+    // for (int i = 0; i < len; i++) {
+    // if (hm.containsKey(target - nums[i])) {
+    // res[0] = i;
+    // res[1] = hm.get(target - nums[i]);
+    // return res;
+    // }
+    // hm.put(nums[i], i);
+    // }
+    // return res;
+    // }
 }

@@ -42,17 +42,25 @@
  */
 public class AddStrings {
     public String addStrings(String num1, String num2) {
-        int len1 = num1.length();
-        int len2 = num2.length();
-        int maxLen = Math.max(len1, len2);
-        char[] res = new char[1];
-        // while (len1>0||len2>0) {
-        // if (condition) {
-
-        // }
-        // }
-        int sum = '1' + '2' - '0';
-        res[0] = (char) sum;
-        return res.toString();
+        int j = num2.length() - 1;
+        int i = num1.length() - 1;
+        int carry = 0, sum = 0, n1, n2;
+        StringBuilder res = new StringBuilder();
+        while (i >= 0 || j >= 0 || carry > 0) {
+            n1 = 0;
+            n2 = 0;
+            if (i >= 0) {
+                n1 = num1.charAt(i) - '0';
+                i--;
+            }
+            if (j >= 0) {
+                n2 = num2.charAt(j) - '0';
+                j--;
+            }
+            sum = (n1 + n2 + carry) % 10;
+            carry = (n1 + n2 + carry) > 10 ? 1 : 0;
+            res.append(sum);
+        }
+        return res.reverse().toString();
     }
 }
