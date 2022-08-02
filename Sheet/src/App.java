@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -225,9 +227,40 @@ public class App {
         // System.out.println(obj.lengthOfLongestSubstring(s));
         // LongestPalindromicSubstring obj = new LongestPalindromicSubstring();
         // System.out.println(obj.longestPalindrome(s));
-        char[] letters = { 'a', 'f', 'j' };
-        char target = 'c';
-        FindSmallestLetterGreaterThanTarget obj = new FindSmallestLetterGreaterThanTarget();
-        System.out.println(obj.nextGreatestLetter(letters, target));
+        // char[] letters = { 'a', 'f', 'j' };
+        // char target = 'c';
+        // FindSmallestLetterGreaterThanTarget obj = new
+        // FindSmallestLetterGreaterThanTarget();
+        // System.out.println(obj.nextGreatestLetter(letters, target));
+        // FindFirstAndLastPositionOfElementInSortedArray obj = new
+        // FindFirstAndLastPositionOfElementInSortedArray();
+        // int nums[] = { 5, 7, 7, 8, 8, 10 };
+        // int target = 8;
+        // int op[] = obj.searchRange(nums, target);
+        // for (int i : op) {
+        // System.out.println(i);
+        // }
+        // CountNegativeNumbersInASortedMatrix obj = new
+        // CountNegativeNumbersInASortedMatrix();
+        // int[][] grid = { { 3, 9 }, { 4, 7 }, { 2, 5 }, { 5, 10 } };
+        // System.out.println(obj.countNegatives(grid));
+        // TheKWeakestRowsInAMatrix obj = new TheKWeakestRowsInAMatrix();
+        // int k = 2;
+        // int[] res = obj.kWeakestRows(grid, k);
+        // for (int i : res) {
+        // System.out.println(i);
+        // }
+        // int truckSize = 10;
+        // MaxUnitsOnATruck obj = new MaxUnitsOnATruck();
+        // System.out.println("units: " + obj.maximumUnits(grid, truckSize));
+        // int[] nums = { 1, 2, 3 };
+        // Subsets obj = new Subsets();
+        // List<List<Integer>> res = new ArrayList<>();
+        // res = obj.subsets(nums);
+        // System.out.println(res);
+        int[][] matrix = { { 1, 5, 9 }, { 10, 11, 13 }, { 12, 13, 15 } };
+        int k = 8;
+        KthSmallestElementInASortedMatrix obj = new KthSmallestElementInASortedMatrix();
+        System.out.println(obj.kthSmallest(matrix, k));
     }
 }
