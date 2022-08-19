@@ -258,9 +258,30 @@ public class App {
         // List<List<Integer>> res = new ArrayList<>();
         // res = obj.subsets(nums);
         // System.out.println(res);
-        int[][] matrix = { { 1, 5, 9 }, { 10, 11, 13 }, { 12, 13, 15 } };
-        int k = 8;
-        KthSmallestElementInASortedMatrix obj = new KthSmallestElementInASortedMatrix();
-        System.out.println(obj.kthSmallest(matrix, k));
+        // int k = 8;
+        // KthSmallestElementInASortedMatrix obj = new
+        // KthSmallestElementInASortedMatrix();
+        // System.out.println(obj.kthSmallest(matrix, k));
+        // int[][] items1 = { { 1, 1 }, { 4, 5 }, { 3, 8 } };//
+        // int[][] items2 = { { 3, 1 }, { 1, 5 } };
+        // MergeSimilarItems obj = new MergeSimilarItems();
+
+        // CountVowelsPermutation obj = new CountVowelsPermutation();
+        // int n = 2;
+        // System.out.println(obj.countVowelPermutation(n));
+
+        // int[] nums = { -1, 0, 1, 2, -1, -4 };
+        // ThreeSum obj = new ThreeSum();
+        // System.out.println(obj.threeSum(nums));
+        // RotateImage obj = new RotateImage();
+        // obj.rotate(matrix);
+
+        // ContainerWithMostWater obj = new ContainerWithMostWater();
+        // int[] height = { 1, 1 };
+        // System.out.println(obj.maxArea(height));
+
+        int[][] matrix = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
+        SetMatrixZero obj = new SetMatrixZero();
+        obj.setZeroes(matrix);
     }
 }

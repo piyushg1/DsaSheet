@@ -1,7 +1,5 @@
 import java.util.PriorityQueue;
 
-import javafx.geometry.Side;
-
 /**
  * https://leetcode.com/problems/maximum-units-on-a-truck/
  * 1710. Maximum Units on a Truck
