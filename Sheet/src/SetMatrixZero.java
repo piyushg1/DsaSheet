@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 // https://leetcode.com/problems/set-matrix-zeroes/
 public class SetMatrixZero {
