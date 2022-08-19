@@ -50,29 +50,89 @@ public class SetMatrixZero {
      */
     public void setZeroes(int[][] matrix) {
         // SC: O(m+n), TC: O(m*n)
-        int m = matrix.length, n = matrix[0].length;
-        HashSet<Integer> r = new HashSet<>();
-        HashSet<Integer> c = new HashSet<>();
+        // int m = matrix.length, n = matrix[0].length;
+        // HashSet<Integer> r = new HashSet<>();
+        // HashSet<Integer> c = new HashSet<>();
 
+        // for (int i = 0; i < m; i++) {
+        // for (int j = 0; j < n; j++) {
+        // if (matrix[i][j] == 0) {
+        // r.add(i);
+        // c.add(j);
+        // }
+        // }
+        // }
+        // // make row zeroes
+        // for (int x : r) {
+        // for (int i = 0; i < n; i++) {
+        // matrix[x][i] = 0;
+        // }
+        // }
+
+        // // make col zeroes
+        // for (int i = 0; i < m; i++) {
+        // for (int x : c) {
+        // matrix[i][x] = 0;
+        // }
+        // }
+        // }
+
+        int m = matrix.length, n = matrix[0].length;
+        boolean r = false, c = false;
+
+        // check for 0th row 0s
+        for (int j = 0; j < n; j++) {
+            if (matrix[0][j] == 0) {
+                r = true;
+                break;
+            }
+        }
+        // check for 0th col 0s
         for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+            if (matrix[i][0] == 0) {
+                c = true;
+                break;
+            }
+        }
+
+        // check for rest rows and cols for zeroes and mark the first element of row and
+        // col as 0
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
                 if (matrix[i][j] == 0) {
-                    r.add(i);
-                    c.add(j);
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
-        // make row zeroes
-        for (int x : r) {
-            for (int i = 0; i < n; i++) {
-                matrix[x][i] = 0;
+
+        // setting rows 0 if 1st element is 0
+        for (int i = 1; i < m; i++) {
+            if (matrix[i][0] == 0) {
+                for (int j = 1; j < n; j++) {
+                    matrix[i][j] = 0;
+                }
             }
         }
 
-        // make col zeroes
-        for (int i = 0; i < m; i++) {
-            for (int x : c) {
-                matrix[i][x] = 0;
+        // setting cols 0 if 1st element is 0
+        for (int j = 1; j < n; j++) {
+            if (matrix[0][j] == 0) {
+                for (int i = 1; i < m; i++) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+
+        // now for first row and first col
+        if (r) {
+            for (int j = 0; j < n; j++) {
+                matrix[0][j] = 0;
+            }
+        }
+        if (c) {
+            for (int i = 0; i < m; i++) {
+                matrix[i][0] = 0;
             }
         }
     }
