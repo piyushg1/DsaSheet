@@ -279,9 +279,17 @@ public class App {
         // ContainerWithMostWater obj = new ContainerWithMostWater();
         // int[] height = { 1, 1 };
         // System.out.println(obj.maxArea(height));
+        // obj.setZeroes(matrix);
 
-        int[][] matrix = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
-        SetMatrixZero obj = new SetMatrixZero();
-        obj.setZeroes(matrix);
+        int[][] matrix = { { 1, 4 }, { 0, 4 } };
+        MergeIntervals obj = new MergeIntervals();
+        int[][] res = new int[matrix.length][2];
+        res = obj.merge(matrix);
+        for (int i = 0; i < res.length; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(res[i][j] + ", ");
+            }
+            System.out.println();
+        }
     }
 }

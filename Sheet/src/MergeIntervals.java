@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/merge-intervals/
  * 
@@ -35,8 +38,35 @@
  * intervals[i].length == 2
  * 0 <= starti <= endi <= 104
  */
-// public class MergeIntervals {
-// public int[][] merge(int[][] intervals) {
+public class MergeIntervals {
+    public int[][] merge(int[][] intervals) {
+        ArrayList<int[]> res = new ArrayList<>();
+        int m = intervals.length, si = 0, ei = 1;
+        int[] curr_interval = new int[2];
+        int[] next_interval = new int[2];
 
-// }
-// }
+        Arrays.sort(intervals, (a, b) -> {
+            return a[0] - b[0];
+        });
+        curr_interval = intervals[0];
+
+        for (int i = 1; i < m; i++) {
+            next_interval = intervals[i];
+            if (curr_interval[ei] >= next_interval[si]) {
+                if (next_interval[ei] > curr_interval[ei]) {
+                    curr_interval[ei] = next_interval[ei];
+                    // [1,3],[2,5]
+                }
+            } else {
+                res.add(curr_interval);
+                curr_interval = next_interval;
+                // [1,3],[4,5]
+            }
+        }
+        res.add(curr_interval);
+
+        int[][] res2 = new int[res.size()][2];
+        res2 = res.toArray(res2);
+        return res2;
+    }
+}
